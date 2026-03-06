@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dress up</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap"
+      rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="..\..\code\css\style_tops.css">
+  </head>
+  <body background="..\..\assets\cup-frame.png">
+    <a href="..\..\code\html\outfits.html">
+      <button type="button" id="back"><img width="30px" height="30px"
+          src="..\..\assets\back-Photoroom.png" /></button>
+    </a>
+
+        <button onclick="changeParentImage1()" type="button" id="x"><img img
+        width="180px" height="180px"
+        src="..\..\assets\x-Photoroom.png" /></button>
+
+    <img id="e1" width="200" height="190"
+      src="..\..\assets\separated\dresses n tops\tops and dresses_r2_c8_processed_by_imagy.png" />
+    <select onchange="sendUpdate(this.value)" class="col" id="col1">
+      <option value="red1">Red</option>
+      <option value="green1">Green</option>
+      <option value="purple1">Purple</option>
+      <option value="pink1">Pink</option>
+      <option value="blue1">Blue</option>
+      <option value="white1">White</option>
+      <option value="black1" selected>Black</option>
+    </select>
+
+    <img id="e2" width="200" height="190"
+      src="..\..\assets\separated\dresses n tops\tops and dresses_r3_c8_processed_by_imagy.png" />
+    <select onchange="sendUpdate(this.value)" class="col" id="col2">
+      <option value="red2">Red</option>
+      <option value="green2">Green</option>
+      <option value="purple2">Purple</option>
+      <option value="pink2">Pink</option>
+      <option value="blue2">Blue</option>
+      <option value="white2">White</option>
+      <option value="black2" selected>Black</option>
+    </select>
+
+    <img id="e3" width="200" height="190"
+      src="..\..\assets\separated\dresses n tops\tops and dresses_r4_c8_processed_by_imagy.png" />
+    <select onchange="sendUpdate(this.value)" class="col" id="col3">
+      <option value="red3">Red</option>
+      <option value="green3">Green</option>
+      <option value="purple3">Purple</option>
+      <option value="pink3">Pink</option>
+      <option value="blue3">Blue</option>
+      <option value="white3">White</option>
+      <option value="black3" selected>Black</option>
+    </select>
+
+    <img id="e4" width="200" height="185"
+      src="..\..\assets\separated\dresses n tops\tops and dresses_r5_c8_processed_by_imagy.png" />
+    <select onchange="sendUpdate(this.value)" class="col" id="col4">
+      <option value="red4">Red</option>
+      <option value="green4">Green</option>
+      <option value="purple4">Purple</option>
+      <option value="pink4">Pink</option>
+      <option value="blue4">Blue</option>
+      <option value="white4">White</option>
+      <option value="black4" selected>Black</option>
+    </select>
+
+    <img id="e5" width="200" height="190"
+      src="..\..\assets\separated\dresses n tops\tops and dresses_r6_c8_processed_by_imagy.png" />
+    <select onchange="sendUpdate(this.value)" class="col" id="col5">
+      <option value="red5">Red</option>
+      <option value="green5">Green</option>
+      <option value="purple5">Purple</option>
+      <option value="pink5">Pink</option>
+      <option value="blue5">Blue</option>
+      <option value="white5">White</option>
+      <option value="black5" selected>Black</option>
+    </select>
+
+    <img id="e6" width="200" height="180"
+      src="..\..\assets\separated\dresses n tops\tops and dresses_r7_c8_processed_by_imagy.png" />
+    <select onchange="sendUpdate(this.value)" class="col" id="col6">
+      <option value="red6">Red</option>
+      <option value="green6">Green</option>
+      <option value="purple6">Purple</option>
+      <option value="pink6">Pink</option>
+      <option value="blue6">Blue</option>
+      <option value="white6">White</option>
+      <option value="black6" selected>Black</option>
+    </select>
+
+    <script>
+          function changeParentImage1() {
+      window.parent.postMessage("removeTop", "*");
+    }
+function sendUpdate(option) {
+      let data = {};
+  // top1----------------------------------------------------------------
+       if (option === "red1") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r2_c2_processed_by_imagy.png",
+          left: "305px",
+          top: "385px",
+          width: "90px",
+          height: "65px"
+        };
+      }
+      if (option === "green1") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r2_c3_processed_by_imagy.png",
+          left: "305px",
+          top: "385px",
+          width: "90px",
+          height: "65px"
+        };
+      }
+      if (option === "purple1") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r2_c4_processed_by_imagy.png",
+          left: "305px",
+          top: "385px",
+          width: "90px",
+          height: "65px"
+        };
+      }
+      if (option === "pink1") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r2_c5_processed_by_imagy.png",
+          left: "305px",
+          top: "385px",
+          width: "90px",
+          height: "65px"
+        };
+      }
+      if (option === "blue1") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r2_c6_processed_by_imagy.png",
+          left: "305px",
+          top: "385px",
+          width: "90px",
+          height: "65px"
+        };
+      }
+      if (option === "white1") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r2_c7_processed_by_imagy.png",
+          left: "305px",
+          top: "385px",
+          width: "90px",
+          height: "65px"
+        };
+      }
+        if (option === "black1") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r2_c8_processed_by_imagy.png",
+          left: "305px",
+          top: "385px",
+          width: "90px",
+          height: "65px"
+        };
+      }
+      // top2-------------------------------------------------------------------------
+       if (option === "red2") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r3_c2_processed_by_imagy.png",
+          left: "290px",
+          top: "385px",
+          width: "120px",
+          height: "90px"
+        };
+      }
+      if (option === "green2") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r3_c3_processed_by_imagy.png",
+          left: "290px",
+          top: "385px",
+          width: "120px",
+          height: "90px"
+        };
+      }
+      if (option === "purple2") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r3_c4_processed_by_imagy.png",
+          left: "290px",
+          top: "385px",
+          width: "120px",
+          height: "90px"
+        };
+      }
+      if (option === "pink2") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r3_c5_processed_by_imagy.png",
+          left: "290px",
+          top: "385px",
+          width: "120px",
+          height: "90px"
+        };
+      }
+      if (option === "blue2") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r3_c6_processed_by_imagy.png",
+          left: "290px",
+          top: "385px",
+          width: "120px",
+          height: "90px"
+        };
+      }
+      if (option === "white2") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r3_c7_processed_by_imagy.png",
+          left: "290px",
+          top: "385px",
+          width: "120px",
+          height: "90px"
+        };
+      }
+        if (option === "black2") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r3_c8_processed_by_imagy.png",
+          left: "290px",
+          top: "385px",
+          width: "120px",
+          height: "90px"
+        };
+      }
+      // top3-------------------------------------------------------------------------
+       if (option === "red3") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r4_c2_processed_by_imagy.png",
+          left: "282px",
+          top: "380px",
+          width: "135px",
+          height: "85px"
+        };
+      }
+      if (option === "green3") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r4_c3_processed_by_imagy.png",
+          left: "282px",
+          top: "380px",
+          width: "135px",
+          height: "85px"
+        };
+      }
+      if (option === "purple3") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r4_c4_processed_by_imagy.png",
+          left: "282px",
+          top: "380px",
+          width: "135px",
+          height: "85px"
+        };
+      }
+      if (option === "pink3") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r4_c5_processed_by_imagy.png",
+          left: "282px",
+          top: "380px",
+          width: "135px",
+          height: "85px"
+        };
+      }
+      if (option === "blue3") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r4_c6_processed_by_imagy.png",
+          left: "282px",
+          top: "380px",
+          width: "135px",
+          height: "85px"
+        };
+      }
+      if (option === "white3") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r4_c7_processed_by_imagy.png",
+          left: "282px",
+          top: "380px",
+          width: "135px",
+          height: "85px"
+        };
+      }
+        if (option === "black3") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r4_c8_processed_by_imagy.png",
+          left: "282px",
+          top: "380px",
+          width: "135px",
+          height: "85px"
+        };
+      }
+      // top4-------------------------------------------------------------------------
+       if (option === "red4") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r5_c2_processed_by_imagy.png",
+          left: "300px",
+          top: "385px",
+          width: "101px",
+          height: "85px"
+        };
+      }
+      if (option === "green4") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r5_c3_processed_by_imagy.png",
+          left: "300px",
+          top: "385px",
+          width: "101px",
+          height: "85px"
+        };
+      }
+      if (option === "purple4") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r5_c4_processed_by_imagy.png",
+          left: "300px",
+          top: "385px",
+          width: "101px",
+          height: "85px"
+        };
+      }
+      if (option === "pink4") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r5_c5_processed_by_imagy.png",
+          left: "300px",
+          top: "385px",
+          width: "101px",
+          height: "85px"
+        };
+      }
+      if (option === "blue4") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r5_c6_processed_by_imagy.png",
+          left: "300px",
+          top: "385px",
+          width: "101px",
+          height: "85px"
+        };
+      }
+      if (option === "white4") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r5_c7_processed_by_imagy.png",
+          left: "300px",
+          top: "385px",
+          width: "101px",
+          height: "85px"
+        };
+      }
+        if (option === "black4") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r5_c8_processed_by_imagy.png",
+          left: "300px",
+          top: "385px",
+          width: "101px",
+          height: "85px"
+        };
+      }
+      // top5-------------------------------------------------------------------------
+       if (option === "red5") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r6_c2_processed_by_imagy.png",
+          left: "282px",
+          top: "377px",
+          width: "135px",
+          height: "100px"
+        };
+      }
+      if (option === "green5") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r6_c3_processed_by_imagy.png",
+          left: "282px",
+          top: "377px",
+          width: "135px",
+          height: "100px"
+        };
+      }
+      if (option === "purple5") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r6_c4_processed_by_imagy.png",
+          left: "282px",
+          top: "377px",
+          width: "135px",
+          height: "100px"
+        };
+      }
+      if (option === "pink5") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r6_c5_processed_by_imagy.png",
+          left: "282px",
+          top: "377px",
+          width: "135px",
+          height: "100px"
+        };
+      }
+      if (option === "blue5") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r6_c6_processed_by_imagy.png",
+          left: "282px",
+          top: "377px",
+          width: "135px",
+          height: "100px"
+        };
+      }
+      if (option === "white5") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r6_c7_processed_by_imagy.png",
+          left: "282px",
+          top: "377px",
+          width: "135px",
+          height: "100px"
+        };
+      }
+        if (option === "black5") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r6_c8_processed_by_imagy.png",
+          left: "282px",
+          top: "377px",
+          width: "135px",
+          height: "100px"
+        };
+      }
+      // top6-------------------------------------------------------------------------
+       if (option === "red6") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r7_c2_processed_by_imagy.png",
+          left: "305px",
+          top: "410px",
+          width: "90px",
+          height: "40px"
+        };
+      }
+      if (option === "green6") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r7_c3_processed_by_imagy.png",
+          left: "305px",
+          top: "410px",
+          width: "90px",
+          height: "40px"
+        };
+      }
+      if (option === "purple6") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r7_c4_processed_by_imagy.png",
+          left: "305px",
+          top: "410px",
+          width: "90px",
+          height: "40px"
+        };
+      }
+      if (option === "pink6") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r7_c5_processed_by_imagy.png",
+          left: "305px",
+          top: "410px",
+          width: "90px",
+          height: "40px"
+        };
+      }
+      if (option === "blue6") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r7_c6_processed_by_imagy.png",
+          left: "305px",
+          top: "410px",
+          width: "90px",
+          height: "40px"
+        };
+      }
+      if (option === "white6") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r7_c7_processed_by_imagy.png",
+          left: "305px",
+          top: "410px",
+          width: "90px",
+          height: "40px"
+        };
+      }
+        if (option === "black6") {
+        data = {
+          type: "top",
+          image: "..\\..\\assets\\separated\\dresses n tops\\tops and dresses_r7_c8_processed_by_imagy.png",
+          left: "305px",
+          top: "410px",
+          width: "90px",
+          height: "40px"
+        };
+      }
+      window.parent.postMessage(data, "*");
+    }
+</script>
+
+  </body>
+</html>

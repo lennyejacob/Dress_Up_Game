@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap"
+			rel="stylesheet">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap"
+			rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="..\..\code\css\style.css">
+	</head>
+	<title> Dress Up </title>
+	<body background="..\..\assets\homepage.jpg">
+		<p id="author">Lenny | BCA | 23S0078</p>
+		<p id="line1">Dress Up</p>
+		<p id="line2">Game!</p>
+		<img class="dressup" src="..\..\assets\dress-up-gif.gif">
+		<a href="index_game.html">
+			<button type="button" id="start"><img width="400px" height="210px"
+					style="border-radius: 20px;"
+					src="..\..\assets\Start cropped-Photoroom.png" /></button>
+		</a>
+
+		<a href="info.html">
+			<button type="button" id="iButton"><img width="30px" height="30px"
+					src="..\..\assets\info-Photoroom.png" /></button>
+		</a>
+		<button id="playBtn">🔇</button>
+
+		<audio id="music" loop>
+			<source
+				src="..\..\assets\KATSEYE  Gameboy  Instrumental.mp3"
+				type="audio/mpeg">
+		</audio>
+
+		<script>
+const button = document.getElementById("playBtn");
+const music = document.getElementById("music");
+
+button.addEventListener("click", function(){
+
+    if(music.paused){
+        music.play();
+        button.textContent = "🔊";
+    }else{
+        music.pause();
+        button.textContent = "🔇";
+    }
+
+});
+</script>
+
+	</body>
+</html>

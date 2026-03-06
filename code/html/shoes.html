@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dress up</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap"
+      rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css"
+      href="..\..\code\css\style_shoes.css">
+  </head>
+  <body background="..\..\assets\cup-frame.png">
+    <a href="..\..\code\html\outfits.html">
+      <button type="button" id="back"><img width="30px" height="30px"
+          src="..\..\assets\back-Photoroom.png" /></button>
+    </a>
+
+    <img id="e1"
+      src="..\..\assets\separated\shoes\shoes_r3_c8_processed_by_imagy.png" />
+    <select onchange="sendUpdate(this.value)" class="col" id="col1">
+      <option value="red1">Red</option>
+      <option value="green1">Green</option>
+      <option value="purple1">Purple</option>
+      <option value="pink1">Pink</option>
+      <option value="blue1">Blue</option>
+      <option value="white1">White</option>
+      <option value="black1" selected>Black</option>
+    </select>
+
+    <img id="e2"
+      src="..\..\assets\separated\shoes\shoes_r4_c8_processed_by_imagy.png" />
+    <select onchange="sendUpdate(this.value)" class="col" id="col2">
+      <option value="red2">Red</option>
+      <option value="green2">Green</option>
+      <option value="purple2">Purple</option>
+      <option value="pink2">Pink</option>
+      <option value="blue2">Blue</option>
+      <option value="white2">White</option>
+      <option value="black2" selected>Black</option>
+    </select>
+
+    <img id="e3"
+      src="..\..\assets\separated\shoes\shoes_r5_c8_processed_by_imagy.png" />
+    <select onchange="sendUpdate(this.value)" class="col" id="col3">
+      <option value="red3">Red</option>
+      <option value="green3">Green</option>
+      <option value="purple3">Purple</option>
+      <option value="pink3">Pink</option>
+      <option value="blue3">Blue</option>
+      <option value="white3">White</option>
+      <option value="black3" selected>Black</option>
+    </select>
+
+    <img id="e4"
+      src="..\..\assets\separated\shoes\shoes_r6_c8_processed_by_imagy.png" />
+    <select onchange="sendUpdate(this.value)" class="col" id="col4">
+      <option value="red4">Red</option>
+      <option value="green4">Green</option>
+      <option value="purple4">Purple</option>
+      <option value="pink4">Pink</option>
+      <option value="blue4">Blue</option>
+      <option value="white4">White</option>
+      <option value="black4" selected>Black</option>
+    </select>
+
+    <img id="e5"
+      src="..\..\assets\separated\shoes\shoes_r7_c8_processed_by_imagy.png" />
+    <select onchange="sendUpdate(this.value)" class="col" id="col5">
+      <option value="red5">Red</option>
+      <option value="green5">Green</option>
+      <option value="purple5">Purple</option>
+      <option value="pink5">Pink</option>
+      <option value="blue5">Blue</option>
+      <option value="white5">White</option>
+      <option value="black5" selected>Black</option>
+    </select>
+
+    <img id="e6"
+      src="..\..\assets\separated\shoes\shoes_r8_c8_processed_by_imagy.png" />
+    <select onchange="sendUpdate(this.value)" class="col" id="col6">
+      <option value="red6">Red</option>
+      <option value="green6">Green</option>
+      <option value="purple6">Purple</option>
+      <option value="pink6">Pink</option>
+      <option value="blue6">Blue</option>
+      <option value="white6">White</option>
+      <option value="black6" selected>Black</option>
+    </select>
+
+    <img id="e7"
+      src="..\..\assets\separated\shoes\shoes_r9_c8_processed_by_imagy.png" />
+    <select onchange="sendUpdate(this.value)" class="col" id="col7">
+      <option value="red7">Red</option>
+      <option value="green7">Green</option>
+      <option value="purple7">Purple</option>
+      <option value="pink7">Pink</option>
+      <option value="blue7">Blue</option>
+      <option value="white7">White</option>
+      <option value="black7" selected>Black</option>
+    </select>
+
+    <img id="e8"
+      src="..\..\assets\separated\shoes\shoes_r10_c8_processed_by_imagy.png" />
+    <select onchange="sendUpdate(this.value)" class="col" id="col8">
+      <option value="red8">Red</option>
+      <option value="green8">Green</option>
+      <option value="purple8">Purple</option>
+      <option value="pink8">Pink</option>
+      <option value="blue8">Blue</option>
+      <option value="white8">White</option>
+      <option value="black8" selected>Black</option>
+    </select>
+
+    <img id="e9"
+      src="..\..\assets\separated\shoes\shoes_r11_c8_processed_by_imagy.png" />
+    <select onchange="sendUpdate(this.value)" class="col" id="col9">
+      <option value="red9">Red</option>
+      <option value="green9">Green</option>
+      <option value="purple9">Purple</option>
+      <option value="pink9">Pink</option>
+      <option value="blue9">Blue</option>
+      <option value="white9">White</option>
+      <option value="black9" selected>Black</option>
+    </select>
+
+    <script>
+  function sendUpdate(option) {
+      let data = {};
+  // shoe1------------------------------
+       if (option === "red1") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r3_c3_processed_by_imagy.png",
+          left: "288px",
+          top: "580px",
+          width: "118px",
+          height: "30px"
+        };
+      }
+if (option === "green1") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r3_c4_processed_by_imagy.png",
+          left: "288px",
+          top: "580px",
+          width: "118px",
+          height: "30px"
+        };
+      }
+      if (option === "purple1") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r3_c6_processed_by_imagy.png",
+          left: "288px",
+          top: "580px",
+          width: "118px",
+          height: "30px"
+        };
+      }
+      if (option === "pink1") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r3_c5_processed_by_imagy.png",
+          left: "288px",
+          top: "580px",
+          width: "118px",
+          height: "30px"
+        };
+      }
+      if (option === "blue1") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r3_c2_processed_by_imagy.png",
+          left: "288px",
+          top: "580px",
+          width: "118px",
+          height: "30px"
+        };
+      }
+      if (option === "white1") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r3_c7_processed_by_imagy.png",
+          left: "288px",
+          top: "580px",
+          width: "118px",
+          height: "30px"
+        };
+      }
+      if (option === "black1") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r3_c8_processed_by_imagy.png",
+          left: "288px",
+          top: "580px",
+          width: "118px",
+          height: "30px"
+        };
+      }
+// shoe2----------------------------------
+      if (option === "red2") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r4_c3_processed_by_imagy.png",
+          left: "288px",
+          top: "580px",
+          width: "118px",
+          height: "30px"
+        };
+      }
+if (option === "green2") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r4_c4_processed_by_imagy.png",
+          left: "288px",
+          top: "580px",
+          width: "118px",
+          height: "30px"
+        };
+      }
+      if (option === "purple2") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r4_c6_processed_by_imagy.png",
+          left: "288px",
+          top: "580px",
+          width: "118px",
+          height: "30px"
+        };
+      }
+      if (option === "pink2") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r4_c5_processed_by_imagy.png",
+          left: "288px",
+          top: "580px",
+          width: "118px",
+          height: "30px"
+        };
+      }
+      if (option === "blue2") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r4_c2_processed_by_imagy.png",
+          left: "288px",
+          top: "580px",
+          width: "118px",
+          height: "30px"
+        };
+      }
+      if (option === "white2") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r4_c7_processed_by_imagy.png",
+          left: "288px",
+          top: "580px",
+          width: "118px",
+          height: "30px"
+        };
+      }
+      if (option === "black2") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r4_c8_processed_by_imagy.png",
+          left: "288px",
+          top: "580px",
+          width: "118px",
+          height: "30px"
+        };
+      }
+// shoe3---------------------------------
+if (option === "red3") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r5_c3_processed_by_imagy.png",
+          left: "288px",
+          top: "549px",
+          width: "122px",
+          height: "61px"
+        };
+      }
+if (option === "green3") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r5_c4_processed_by_imagy.png",
+          left: "288px",
+          top: "549px",
+          width: "122px",
+          height: "61px"
+        };
+      }
+      if (option === "purple3") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r5_c6_processed_by_imagy.png",
+          left: "288px",
+          top: "549px",
+          width: "122px",
+          height: "61px"
+        };
+      }
+      if (option === "pink3") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r5_c5_processed_by_imagy.png",
+          left: "288px",
+          top: "549px",
+          width: "122px",
+          height: "61px"
+        };
+      }
+      if (option === "blue3") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r5_c2_processed_by_imagy.png",
+          left: "288px",
+          top: "549px",
+          width: "122px",
+          height: "61px"
+        };
+      }
+      if (option === "white3") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r5_c7_processed_by_imagy.png",
+          left: "288px",
+          top: "549px",
+          width: "122px",
+          height: "61px"
+        };
+      }
+      if (option === "black3") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r5_c8_processed_by_imagy.png",
+          left: "288px",
+          top: "549px",
+          width: "122px",
+          height: "61px"
+        };
+      }
+// shoe4-----------------------------------
+if (option === "red4") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r6_c3_processed_by_imagy.png",
+          left: "288px",
+          top: "570px",
+          width: "122px",
+          height: "40px"
+        };
+      }
+if (option === "green4") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r6_c4_processed_by_imagy.png",
+          left: "288px",
+          top: "570px",
+          width: "122px",
+          height: "40px"
+        };
+      }
+      if (option === "purple4") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r6_c6_processed_by_imagy.png",
+          left: "288px",
+          top: "570px",
+          width: "122px",
+          height: "40px"
+        };
+      }
+      if (option === "pink4") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r6_c5_processed_by_imagy.png",
+          left: "288px",
+          top: "570px",
+          width: "122px",
+          height: "40px"
+        };
+      }
+      if (option === "blue4") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r6_c2_processed_by_imagy.png",
+          left: "288px",
+          top: "570px",
+          width: "122px",
+          height: "40px"
+        };
+      }
+      if (option === "white4") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r6_c7_processed_by_imagy.png",
+          left: "288px",
+          top: "570px",
+          width: "122px",
+          height: "40px"
+        };
+      }
+      if (option === "black4") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r6_c8_processed_by_imagy.png",
+          left: "288px",
+          top: "570px",
+          width: "122px",
+          height: "40px"
+        };
+      }
+// shoe5---------------------------------------
+if (option === "red5") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r7_c3_processed_by_imagy.png",
+          left: "288px",
+          top: "570px",
+          width: "122px",
+          height: "40px"
+        };
+      }
+if (option === "green5") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r7_c4_processed_by_imagy.png",
+          left: "288px",
+          top: "570px",
+          width: "122px",
+          height: "40px"
+        };
+      }
+      if (option === "purple5") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r7_c6_processed_by_imagy.png",
+          left: "288px",
+          top: "570px",
+          width: "122px",
+          height: "40px"
+        };
+      }
+      if (option === "pink5") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r7_c5_processed_by_imagy.png",
+          left: "288px",
+          top: "570px",
+          width: "122px",
+          height: "40px"
+        };
+      }
+      if (option === "blue5") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r7_c2_processed_by_imagy.png",
+          left: "288px",
+          top: "570px",
+          width: "122px",
+          height: "40px"
+        };
+      }
+      if (option === "white5") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r7_c7_processed_by_imagy.png",
+          left: "288px",
+          top: "570px",
+          width: "122px",
+          height: "40px"
+        };
+      }
+      if (option === "black5") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r7_c8_processed_by_imagy.png",
+          left: "288px",
+          top: "580px",
+          width: "122px",
+          height: "40px"
+        };
+      }
+    //  shoe6 -------------------------------
+    if (option === "red6") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r8_c3_processed_by_imagy.png",
+          left: "290px",
+          top: "585px",
+          width: "122px",
+          height: "40px"
+        };
+      }
+if (option === "green6") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r8_c4_processed_by_imagy.png",
+          left: "290px",
+          top: "585px",
+          width: "122px",
+          height: "40px"
+        };
+      }
+      if (option === "purple6") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r8_c6_processed_by_imagy.png",
+          left: "290px",
+          top: "585px",
+          width: "122px",
+          height: "40px"
+        };
+      }
+      if (option === "pink6") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r8_c5_processed_by_imagy.png",
+          left: "290px",
+          top: "585px",
+          width: "122px",
+          height: "40px"
+        };
+      }
+      if (option === "blue6") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r8_c2_processed_by_imagy.png",
+          left: "290px",
+          top: "585px",
+          width: "122px",
+          height: "40px"
+        };
+      }
+      if (option === "white6") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r8_c7_processed_by_imagy.png",
+          left: "290px",
+          top: "585px",
+          width: "122px",
+          height: "40px"
+        };
+      }
+      if (option === "black6") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r8_c8_processed_by_imagy.png",
+          left: "290px",
+          top: "585px",
+          width: "122px",
+          height: "40px"
+        };
+      }
+      // shoe7------------------------------------
+      if (option === "red7") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r9_c3_processed_by_imagy.png",
+          left: "289px",
+          top: "562px",
+          width: "122px",
+          height: "50px"
+        };
+      }
+      if (option === "green7") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r9_c4_processed_by_imagy.png",
+          left: "289px",
+          top: "562px",
+          width: "122px",
+          height: "50px"
+        };
+      }
+      if (option === "purple7") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r9_c6_processed_by_imagy.png",
+          left: "289px",
+          top: "562px",
+          width: "122px",
+          height: "50px"
+        };
+      }
+      if (option === "pink7") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r9_c5_processed_by_imagy.png",
+          left: "289px",
+          top: "562px",
+          width: "122px",
+          height: "50px"
+        };
+      }
+      if (option === "blue7") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r9_c2_processed_by_imagy.png",
+          left: "289px",
+          top: "562px",
+          width: "122px",
+          height: "50px"
+        };
+      }
+      if (option === "white7") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r9_c7_processed_by_imagy.png",
+          left: "289px",
+          top: "562px",
+          width: "122px",
+          height: "50px"
+        };
+      }
+      if (option === "black7") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r9_c8_processed_by_imagy.png",
+          left: "289px",
+          top: "562px",
+          width: "122px",
+          height: "50px"
+        };
+      }
+      // shoe8-------------------------------------------
+      if (option === "red8") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r10_c3_processed_by_imagy.png",
+          left: "290px",
+          top: "525px",
+          width: "122px",
+          height: "90px"
+        };
+      }
+      if (option === "green8") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r10_c4_processed_by_imagy.png",
+          left: "290px",
+          top: "530px",
+          width: "122px",
+          height: "85px"
+        };
+      }
+      if (option === "purple8") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r10_c6_processed_by_imagy.png",
+          left: "290px",
+          top: "530px",
+          width: "122px",
+          height: "85px"
+        };
+      }
+      if (option === "pink8") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r10_c5_processed_by_imagy.png",
+          left: "290px",
+          top: "530px",
+          width: "122px",
+          height: "85px"
+        };
+      }
+      if (option === "blue8") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r10_c2_processed_by_imagy.png",
+          left: "290px",
+          top: "530px",
+          width: "122px",
+          height: "85px"
+        };
+      }
+      if (option === "white8") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r10_c7_processed_by_imagy.png",
+          left: "290px",
+          top: "530px",
+          width: "122px",
+          height: "85px"
+        };
+      }
+      if (option === "black8") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r10_c8_processed_by_imagy.png",
+          left: "290px",
+          top: "530px",
+          width: "122px",
+          height: "85px"
+        };
+      }
+      // shoe9-----------------------------------
+      if (option === "red9") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r11_c3_processed_by_imagy.png",
+          left: "289.5px",
+          top: "585px",
+          width: "122px",
+          height: "40px"
+        };
+      }
+if (option === "green9") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r11_c4_processed_by_imagy.png",
+          left: "289.5px",
+          top: "585px",
+          width: "122px",
+          height: "40px"
+        };
+      }
+      if (option === "purple9") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r11_c6_processed_by_imagy.png",
+          left: "289.5px",
+          top: "585px",
+          width: "122px",
+          height: "40px"
+        };
+      }
+      if (option === "pink9") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r11_c5_processed_by_imagy.png",
+          left: "289.5px",
+          top: "585px",
+          width: "122px",
+          height: "40px"
+        };
+      }
+      if (option === "blue9") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r11_c2_processed_by_imagy.png",
+          left: "289.5px",
+          top: "585px",
+          width: "122px",
+          height: "40px"
+        };
+      }
+      if (option === "white9") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r11_c7_processed_by_imagy.png",
+          left: "289.5px",
+          top: "585px",
+          width: "122px",
+          height: "40px"
+        };
+      }
+      if (option === "black9") {
+        data = {
+          type: "update",
+          image: "..\\..\\assets\\separated\\shoes\\shoes_r11_c8_processed_by_imagy.png",
+          left: "289.5px",
+          top: "585px",
+          width: "122px",
+          height: "40px"
+        };
+      }
+      // shoe end--------------------------------------
+      window.parent.postMessage(data, "*");
+    }
+</script>
+
+  </body>
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Dress up</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap"
+      rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="..\..\code\css\style_game.css">
+  </head>
+
+  <body background="..\..\assets\closet.png">
+    <a href="..\..\code\html\index.html">
+      <button type="button" id="back"><img width="30px" height="30px"
+          src="..\..\assets\back-Photoroom.png" /></button>
+    </a>
+    <button id="playBtn">🔇</button>
+
+    <audio id="music" loop>
+      <source
+        src="..\..\assets\KATSEYE  Gameboy  Instrumental.mp3"
+        type="audio/mpeg">
+    </audio>
+
+    <img id="doll" src="..\..\assets\separated\skins\grey.png" width="160"
+      height="400" />
+    <img id="eye"
+      src="..\..\assets\separated\eye colours\eye color_r1_c1_processed_by_imagy.png"
+      width="150"
+      height="35" />
+    <img id="eyeliner"
+      src="..\..\assets\separated\eyeliners\eyeliner_r1_c1_processed_by_imagy.png"
+      width="150"
+      height="33" />
+    <img id="lip"
+      src="..\..\assets\separated\lips\lips_r1_c1_processed_by_imagy.png"
+      width="38" height="20" />
+    <img id="blush"
+      src="..\..\assets\separated\blush\blush_r1_c1_processed_by_imagy.png"
+      width="120" height="25" />
+    <img id="shoe"
+      src="..\..\assets\separated\shoes\shoes_r3_c8_processed_by_imagy.png" />
+    <img id="bottom" src="..\..\assets\none.png" />
+    <!-- ..\..\assets\separated\bottoms\bottoms_r2_c7_processed_by_imagy.png -->
+    <img id="top" src="..\..\assets\none.png" />
+    <!-- ..\..\assets\separated\dresses n tops\tops and dresses_r2_c8_processed_by_imagy.png -->
+    <img id="dress"
+      src="..\..\assets\separated\dresses n tops\tops and dresses_r8_c8_processed_by_imagy.png" />
+    <img id="hair"
+      src="..\..\assets\separated\hair 1\hair 1_r1_c3_processed_by_imagy.png" />
+
+    <iframe id="myFrame" src="..\..\code\html\index_opts.html" width="58%"
+      height="710" align="right">
+    </iframe>
+
+    <script>
+      const button = document.getElementById("playBtn");
+const music = document.getElementById("music");
+
+button.addEventListener("click", function(){
+
+    if(music.paused){
+        music.play();
+        button.textContent = "🔊";
+    }else{
+        music.pause();
+        button.textContent = "🔇";
+    }
+
+});
+    window.addEventListener("message", function (event) {
+      const data = event.data;
+      //skins
+      if (event.data === "changeImage1") {
+        document.getElementById("doll").src = "..\\..\\assets\\separated\\skins\\skins_r1_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeImage2") {
+        document.getElementById("doll").src = "..\\..\\assets\\separated\\skins\\skins_r1_c2_processed_by_imagy.png";
+      }
+      else if (event.data === "changeImage3") {
+        document.getElementById("doll").src = "..\\..\\assets\\separated\\skins\\skins_r1_c3_processed_by_imagy.png";
+      }
+      else if (event.data === "changeImage4") {
+        document.getElementById("doll").src = "..\\..\\assets\\separated\\skins\\skins_r1_c4_processed_by_imagy.png";
+      }
+      else if (event.data === "changeImage5") {
+        document.getElementById("doll").src = "..\\..\\assets\\separated\\skins\\skins_r2_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeImage6") {
+        document.getElementById("doll").src = "..\\..\\assets\\separated\\skins\\skins_r2_c2_processed_by_imagy.png";
+      }
+      else if (event.data === "changeImage7") {
+        document.getElementById("doll").src = "..\\..\\assets\\separated\\skins\\skins_r2_c3_processed_by_imagy.png";
+      }
+      else if (event.data === "changeImage8") {
+        document.getElementById("doll").src = "..\\..\\assets\\separated\\skins\\skins_r2_c4_processed_by_imagy.png";
+      }
+      //eyes
+      else if (event.data === "changeEye1") {
+        document.getElementById("eye").src = "..\\..\\assets\\separated\\eye colours\\eye color_r1_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeEye2") {
+        document.getElementById("eye").src = "..\\..\\assets\\separated\\eye colours\\eye color_r2_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeEye3") {
+        document.getElementById("eye").src = "..\\..\\assets\\separated\\eye colours\\eye color_r3_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeEye4") {
+        document.getElementById("eye").src = "..\\..\\assets\\separated\\eye colours\\eye color_r4_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeEye5") {
+        document.getElementById("eye").src = "..\\..\\assets\\separated\\eye colours\\eye color_r5_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeEye6") {
+        document.getElementById("eye").src = "..\\..\\assets\\separated\\eye colours\\eye color_r6_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeEye7") {
+        document.getElementById("eye").src = "..\\..\\assets\\separated\\eye colours\\eye color_r7_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeEye8") {
+        document.getElementById("eye").src = "..\\..\\assets\\separated\\eye colours\\eye color_r8_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeEye9") {
+        document.getElementById("eye").src = "..\\..\\assets\\separated\\eye colours\\eye color_r9_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeEye10") {
+        document.getElementById("eye").src = "..\\..\\assets\\separated\\eye colours\\eye color_r10_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeEye11") {
+        document.getElementById("eye").src = "..\\..\\assets\\separated\\eye colours\\eye color_r11_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeEye12") {
+        document.getElementById("eye").src = "..\\..\\assets\\separated\\eye colours\\eye color_r12_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeEye13") {
+        document.getElementById("eye").src = "..\\..\\assets\\separated\\eye colours\\eye color_r13_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeEye14") {
+        document.getElementById("eye").src = "..\\..\\assets\\separated\\eye colours\\eye color_r14_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeEye15") {
+        document.getElementById("eye").src = "..\\..\\assets\\separated\\eye colours\\eye color_r15_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeEye16") {
+        document.getElementById("eye").src = "..\\..\\assets\\separated\\eye colours\\eye color_r16_c1_processed_by_imagy.png";
+      }
+      //eye liner
+      else if (event.data === "changeEyeLiner1") {
+        document.getElementById("eyeliner").src = "..\\..\\assets\\separated\\eyeliners\\eyeliner_r1_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeEyeLiner2") {
+        document.getElementById("eyeliner").src = "..\\..\\assets\\separated\\eyeliners\\eyeliner_r2_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeEyeLiner3") {
+        document.getElementById("eyeliner").src = "..\\..\\assets\\separated\\eyeliners\\eyeliner_r3_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeEyeLiner4") {
+        document.getElementById("eyeliner").src = "..\\..\\assets\\separated\\eyeliners\\eyeliner_r4_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeEyeLiner5") {
+        document.getElementById("eyeliner").src = "..\\..\\assets\\separated\\eyeliners\\eyeliner_r5_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeEyeLiner6") {
+        document.getElementById("eyeliner").src = "..\\..\\assets\\separated\\eyeliners\\eyeliner_r6_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeEyeLiner7") {
+        document.getElementById("eyeliner").src = "..\\..\\assets\\separated\\eyeliners\\eyeliner_r7_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeEyeLiner8") {
+        document.getElementById("eyeliner").src = "..\\..\\assets\\separated\\eyeliners\\eyeliner_r8_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeEyeLiner9") {
+        document.getElementById("eyeliner").src = "..\\..\\assets\\separated\\eyeliners\\eyeliner_r9_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeEyeLiner10") {
+        document.getElementById("eyeliner").src = "..\\..\\assets\\separated\\eyeliners\\eyeliner_r10_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeEyeLiner11") {
+        document.getElementById("eyeliner").src = "..\\..\\assets\\separated\\eyeliners\\eyeliner_r11_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeEyeLiner12") {
+        document.getElementById("eyeliner").src = "..\\..\\assets\\separated\\eyeliners\\eyeliner_r12_c1_processed_by_imagy.png";
+      }
+      //lips
+      else if (event.data === "changeLip1") {
+        document.getElementById("lip").src = "..\\..\\assets\\separated\\lips\\lips_r1_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeLip2") {
+        document.getElementById("lip").src = "..\\..\\assets\\separated\\lips\\lips_r1_c2_processed_by_imagy.png";
+      }
+      else if (event.data === "changeLip3") {
+        document.getElementById("lip").src = "..\\..\\assets\\separated\\lips\\lips_r1_c3_processed_by_imagy.png";
+      }
+      else if (event.data === "changeLip4") {
+        document.getElementById("lip").src = "..\\..\\assets\\separated\\lips\\lips_r1_c4_processed_by_imagy.png";
+      }
+      else if (event.data === "changeLip5") {
+        document.getElementById("lip").src = "..\\..\\assets\\separated\\lips\\lips_r2_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeLip6") {
+        document.getElementById("lip").src = "..\\..\\assets\\separated\\lips\\lips_r2_c2_processed_by_imagy.png";
+      }
+      else if (event.data === "changeLip7") {
+        document.getElementById("lip").src = "..\\..\\assets\\separated\\lips\\lips_r3_c3_processed_by_imagy.png";
+      }
+      else if (event.data === "changeLip8") {
+        document.getElementById("lip").src = "..\\..\\assets\\separated\\lips\\lips_r3_c4_processed_by_imagy.png";
+      }
+      else if (event.data === "changeLip9") {
+        document.getElementById("lip").src = "..\\..\\assets\\separated\\lips\\lips_r4_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeLip10") {
+        document.getElementById("lip").src = "..\\..\\assets\\separated\\lips\\lips_r4_c2_processed_by_imagy.png";
+      }
+      else if (event.data === "changeLip11") {
+        document.getElementById("lip").src = "..\\..\\assets\\separated\\lips\\lips_r4_c3_processed_by_imagy.png";
+      }
+      else if (event.data === "changeLip12") {
+        document.getElementById("lip").src = "..\\..\\assets\\separated\\lips\\lips_r4_c4_processed_by_imagy.png";
+      }
+      else if (event.data === "changeLip13") {
+        document.getElementById("lip").src = "..\\..\\assets\\separated\\lips\\lips_r5_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeLip14") {
+        document.getElementById("lip").src = "..\\..\\assets\\separated\\lips\\lips_r5_c2_processed_by_imagy.png";
+      }
+      else if (event.data === "changeLip15") {
+        document.getElementById("lip").src = "..\\..\\assets\\separated\\lips\\lips_r5_c3_processed_by_imagy.png";
+      }
+      else if (event.data === "changeLip16") {
+        document.getElementById("lip").src = "..\\..\\assets\\separated\\lips\\lips_r6_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeLip17") {
+        document.getElementById("lip").src = "..\\..\\assets\\separated\\lips\\lips_r6_c2_processed_by_imagy.png";
+      }
+      else if (event.data === "changeLip18") {
+        document.getElementById("lip").src = "..\\..\\assets\\separated\\lips\\lips_r6_c3_processed_by_imagy.png";
+      }
+      //blush
+      else if (event.data === "changeBlush1") {
+        document.getElementById("blush").src = "..\\..\\assets\\separated\\blush\\blush_r1_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeBlush2") {
+        document.getElementById("blush").src = "..\\..\\assets\\separated\\blush\\blush_r2_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeBlush3") {
+        document.getElementById("blush").src = "..\\..\\assets\\separated\\blush\\blush_r3_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeBlush4") {
+        document.getElementById("blush").src = "..\\..\\assets\\separated\\blush\\blush_r4_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeBlush5") {
+        document.getElementById("blush").src = "..\\..\\assets\\separated\\blush\\blush_r5_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeBlush6") {
+        document.getElementById("blush").src = "..\\..\\assets\\separated\\blush\\blush_r6_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeBlush7") {
+        document.getElementById("blush").src = "..\\..\\assets\\separated\\blush\\blush_r7_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeBlush8") {
+        document.getElementById("blush").src = "..\\..\\assets\\separated\\blush\\blush_r8_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeBlush9") {
+        document.getElementById("blush").src = "..\\..\\assets\\separated\\blush\\blush_r9_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeBlush10") {
+        document.getElementById("blush").src = "..\\..\\assets\\separated\\blush\\blush_r10_c1_processed_by_imagy.png";
+      }
+      else if (event.data === "changeBlush11") {
+        document.getElementById("blush").src = "..\\..\\assets\\separated\\blush\\blush_r11_c1_processed_by_imagy.png";
+      }
+      // shoes
+      else if (data.type === "update") {
+        const img = document.getElementById("shoe");
+
+        img.src = data.image;
+
+        img.style.left = data.left;
+        img.style.top = data.top;
+        img.style.width = data.width;
+        img.style.height = data.height;
+      }
+      // bottoms
+      else if (event.data === "removeBottom") {
+        document.getElementById("bottom").src = "..\\..\\assets\\none.png";
+        document.getElementById("shoe").style.zIndex = "6";
+      }
+      else if (data.type === "bottom") {
+        const img = document.getElementById("bottom");
+
+        img.src = data.image;
+
+        img.style.left = data.left;
+        img.style.top = data.top;
+        img.style.width = data.width;
+        img.style.height = data.height;
+
+        // shoe in front of skinny pants, behind baggy pants
+        if (data.baggy) {
+          document.getElementById("shoe").style.zIndex = "4";
+        } else {
+          document.getElementById("shoe").style.zIndex = "6";
+        }
+      }
+      // tops
+      else if (event.data === "removeTop") {
+        document.getElementById("top").src = "..\\..\\assets\\none.png";
+      }
+      else if (data.type === "top") {
+        const img = document.getElementById("top");
+
+        img.src = data.image;
+
+        img.style.left = data.left;
+        img.style.top = data.top;
+        img.style.width = data.width;
+        img.style.height = data.height;
+      }
+      // dress
+      else if (event.data === "removeDress") {
+        document.getElementById("dress").src = "..\\..\\assets\\none.png";
+      }
+      else if (data.type === "dress") {
+        const img = document.getElementById("dress");
+
+        img.src = data.image;
+
+        img.style.left = data.left;
+        img.style.top = data.top;
+        img.style.width = data.width;
+        img.style.height = data.height;
+      }
+      // hair
+      else if (event.data === "removeHair") {
+        document.getElementById("hair").src = "..\\..\\assets\\none.png";
+      }
+      else if (data.type === "hair") {
+        const img = document.getElementById("hair");
+
+        img.src = data.image;
+
+        img.style.left = data.left;
+        img.style.top = data.top;
+        img.style.width = data.width;
+        img.style.height = data.height;
+      }
+    });
+  </script>
+
+  </body>
+
+</html>

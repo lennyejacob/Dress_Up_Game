@@ -1,0 +1,182 @@
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  font-family: "La Belle Aurore";
+}
+
+#back {
+  background-color: transparent;
+  background-image: url("..\..\assets\back-Photoroom.png");
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  z-index: 999;
+  transition: tranform 1s;
+}
+
+#back:hover {
+  transform: scale(1.1);
+}
+
+#x {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  height: 56px;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  transition: tranform 1s;
+}
+
+#x:hover {
+  transform: scale(1.1);
+}
+
+#e1 {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  width: "260";
+  height: "250";
+  position: absolute;
+  left: 100px;
+  top: 350px;
+
+}
+
+#e2 {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  width: "270";
+  height: "260";
+  position: absolute;
+  left: 100px;
+  top: 600px;
+
+}
+
+#e3 {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  width: "275";
+  height: "260";
+  position: absolute;
+  left: 100px;
+  top: 850px;
+
+}
+
+#e4 {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  width: "265";
+  height: "260";
+  position: absolute;
+  left: 100px;
+  top: 1100px;
+
+}
+
+#e5 {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  width: "280";
+  height: "270";
+  position: absolute;
+  left: 100px;
+  top: 1370px;
+
+}
+
+#e6 {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  width: "255";
+  height: "235";
+  position: absolute;
+  left: 100px;
+  top: 1600px;
+
+}
+
+.col {
+  position: absolute;
+  left: 400px;
+  appearance: menulist-button;
+  background-color: pink;
+  border: dotted, hotpink;
+  margin: 0;
+  width: 15%;
+  padding: 10px;
+  font-family: "La Belle Aurore";
+  font-size: 20px;
+  transition: tranform 1s;
+}
+
+#col1 {
+  position: absolute;
+  top: 430px;
+}
+
+#col1:hover {
+  transform: scale(1.1);
+}
+
+#col2 {
+  position: absolute;
+  top: 680px;
+}
+
+#col2:hover {
+  transform: scale(1.1);
+}
+
+#col3 {
+  position: absolute;
+  top: 930px;
+}
+
+#col3:hover {
+  transform: scale(1.1);
+}
+
+#col4 {
+  position: absolute;
+  top: 1180px;
+}
+
+#col4:hover {
+  transform: scale(1.1);
+}
+
+#col5 {
+  position: absolute;
+  top: 1430px;
+}
+
+#col5:hover {
+  transform: scale(1.1);
+}
+
+#col6 {
+  position: absolute;
+  top: 1600px;
+}
+
+#col6:hover {
+  transform: scale(1.1);
+}

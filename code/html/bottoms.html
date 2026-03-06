@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dress up</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap"
+      rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css"
+      href="..\..\code\css\style_bottoms.css">
+  </head>
+  <body background="..\..\assets\cup-frame.png">
+    <a href="..\..\code\html\outfits.html">
+      <button type="button" id="back"><img width="30px" height="30px"
+          src="..\..\assets\back-Photoroom.png" /></button>
+    </a>
+
+    <button onclick="changeParentImage1()" type="button" id="x"><img img
+        width="180px" height="180px"
+        src="..\..\assets\x-Photoroom.png" /></button>
+
+    <img id="e1"
+      src="..\..\assets\separated\bottoms\bottoms_r2_c7_processed_by_imagy.png" />
+    <select onchange="sendUpdate(this.value)" class="col" id="col1">
+      <option value="blue11">Blue 1</option>
+      <option value="blue21">Blue 2</option>
+      <option value="blue31">Blue 3</option>
+      <option value="pink1">Pink</option>
+      <option value="white1">White</option>
+      <option value="black1" selected>Black</option>
+    </select>
+
+    <img id="e2"
+      src="..\..\assets\separated\bottoms\bottoms_r3_c7_processed_by_imagy.png" />
+    <select onchange="sendUpdate(this.value)" class="col" id="col2">
+      <option value="blue12">Blue 1</option>
+      <option value="blue22">Blue 2</option>
+      <option value="blue32">Blue 3</option>
+      <option value="pink2">Pink</option>
+      <option value="white2">White</option>
+      <option value="black2" selected>Black</option>
+    </select>
+
+    <img id="e3"
+      src="..\..\assets\separated\bottoms\bottoms_r4_c7_processed_by_imagy.png" />
+    <select onchange="sendUpdate(this.value)" class="col" id="col3">
+      <option value="blue13">Blue 1</option>
+      <option value="blue23">Blue 2</option>
+      <option value="blue33">Blue 3</option>
+      <option value="pink3">Pink</option>
+      <option value="white3">White</option>
+      <option value="black3" selected>Black</option>
+    </select>
+
+    <img id="e4"
+      src="..\..\assets\separated\bottoms\bottoms_r5_c7_processed_by_imagy.png" />
+    <select onchange="sendUpdate(this.value)" class="col" id="col4">
+      <option value="blue14">Blue 1</option>
+      <option value="blue24">Blue 2</option>
+      <option value="blue34">Blue 3</option>
+      <option value="pink4">Pink</option>
+      <option value="white4">White</option>
+      <option value="black4" selected>Black</option>
+    </select>
+
+    <img id="e5"
+      src="..\..\assets\separated\bottoms\bottoms_r6_c7_processed_by_imagy.png" />
+    <select onchange="sendUpdate(this.value)" class="col" id="col5">
+      <option value="blue15">Blue 1</option>
+      <option value="blue25">Blue 2</option>
+      <option value="blue35">Blue 3</option>
+      <option value="pink5">Pink</option>
+      <option value="white5">White</option>
+      <option value="black5" selected>Black</option>>
+    </select>
+
+    <img id="e6"
+      src="..\..\assets\separated\bottoms\bottoms_r7_c7_processed_by_imagy.png" />
+    <select onchange="sendUpdate(this.value)" class="col" id="col6">
+      <option value="blue16">Blue 1</option>
+      <option value="blue26">Blue 2</option>
+      <option value="blue36">Blue 3</option>
+      <option value="pink6">Pink</option>
+      <option value="white6">White</option>
+      <option value="black6" selected>Black</option>
+    </select>
+
+    <script>
+    function changeParentImage1() {
+      window.parent.postMessage("removeBottom", "*");
+    }
+function sendUpdate(option) {
+      let data = {};
+  // bottom1------------------------------ 
+       if (option === "blue11") {
+        data = {
+          type: "bottom",
+          image: "..\\..\\assets\\separated\\bottoms\\bottoms_r2_c2_processed_by_imagy.png",
+          left: "300px",
+          top: "475px",
+          width: "100px",
+          height: "120px",
+          baggy: false
+        };
+      }
+if (option === "blue21") {
+        data = {
+          type: "bottom",
+          image: "..\\..\\assets\\separated\\bottoms\\bottoms_r2_c3_processed_by_imagy.png",
+          left: "300px",
+          top: "475px",
+          width: "100px",
+          height: "120px",
+          baggy: false
+        };
+      }
+      if (option === "blue31") {
+        data = {
+          type: "bottom",
+          image: "..\\..\\assets\\separated\\bottoms\\bottoms_r2_c4_processed_by_imagy.png",
+          left: "300px",
+          top: "475px",
+          width: "100px",
+          height: "120px",
+          baggy: false
+        };
+      }
+      if (option === "pink1") {
+        data = {
+          type: "bottom",
+          image: "..\\..\\assets\\separated\\bottoms\\bottoms_r2_c5_processed_by_imagy.png",
+          left: "300px",
+          top: "475px",
+          width: "100px",
+          height: "120px",
+          baggy: false
+        };
+      }
+      if (option === "white1") {
+        data = {
+          type: "bottom",
+          image: "..\\..\\assets\\separated\\bottoms\\bottoms_r2_c6_processed_by_imagy.png",
+          left: "300px",
+          top: "475px",
+          width: "100px",
+          height: "120px",
+          baggy: false
+        };
+      }
+      if (option === "black1") {
+        data = {
+          type: "bottom",
+          image: "..\\..\\assets\\separated\\bottoms\\bottoms_r2_c7_processed_by_imagy.png",
+          left: "300px",
+          top: "475px",
+          width: "100px",
+          height: "120px",
+          baggy: false
+        };
+      }
+   // bottom2----------------------------------------------------------------------
+       if (option === "blue12") {
+        data = {
+          type: "bottom",
+          image: "..\\..\\assets\\separated\\bottoms\\bottoms_r3_c2_processed_by_imagy.png",
+          left: "300px",
+          top: "465px",
+          width: "100px",
+          height: "120px",
+          baggy: true
+        };
+      }
+if (option === "blue22") {
+        data = {
+          type: "bottom",
+          image: "..\\..\\assets\\separated\\bottoms\\bottoms_r3_c3_processed_by_imagy.png",
+          left: "300px",
+          top: "465px",
+          width: "100px",
+          height: "120px",
+          baggy: true
+        };
+      }
+      if (option === "blue32") {
+        data = {
+          type: "bottom",
+          image: "..\\..\\assets\\separated\\bottoms\\bottoms_r3_c4_processed_by_imagy.png",
+          left: "300px",
+          top: "465px",
+          width: "100px",
+          height: "120px",
+          baggy: true
+        };
+      }
+      if (option === "pink2") {
+        data = {
+          type: "bottom",
+          image: "..\\..\\assets\\separated\\bottoms\\bottoms_r3_c6_processed_by_imagy.png",
+          left: "300px",
+          top: "465px",
+          width: "100px",
+          height: "120px",
+          baggy: true
+        };
+      }
+      if (option === "white2") {
+        data = {
+          type: "bottom",
+          image: "..\\..\\assets\\separated\\bottoms\\bottoms_r3_c6_processed_by_imagy.png",
+          left: "300px",
+          top: "465px",
+          width: "100px",
+          height: "120px",
+          baggy: true
+        };
+      }
+      if (option === "black2") {
+        data = {
+          type: "bottom",
+          image: "..\\..\\assets\\separated\\bottoms\\bottoms_r3_c7_processed_by_imagy.png",
+          left: "300px",
+          top: "465px",
+          width: "100px",
+          height: "120px",
+          baggy: true
+        };
+      }
+      // bottom3-----------------------------------------------------------------
+       if (option === "blue13") {
+        data = {
+          type: "bottom",
+          image: "..\\..\\assets\\separated\\bottoms\\bottoms_r4_c2_processed_by_imagy.png",
+          left: "300px",
+          top: "465px",
+          width: "100px",
+          height: "120px",
+          baggy: false
+        };
+      }
+if (option === "blue23") {
+        data = {
+          type: "bottom",
+          image: "..\\..\\assets\\separated\\bottoms\\bottoms_r4_c3_processed_by_imagy.png",
+          left: "300px",
+          top: "465px",
+          width: "100px",
+          height: "120px",
+          baggy: false
+        };
+      }
+      if (option === "blue33") {
+        data = {
+          type: "bottom",
+          image: "..\\..\\assets\\separated\\bottoms\\bottoms_r4_c4_processed_by_imagy.png",
+          left: "300px",
+          top: "465px",
+          width: "100px",
+          height: "120px",
+          baggy: false
+        };
+      }
+      if (option === "pink3") {
+        data = {
+          type: "bottom",
+          image: "..\\..\\assets\\separated\\bottoms\\bottoms_r4_c5_processed_by_imagy.png",
+          left: "300px",
+          top: "465px",
+          width: "100px",
+          height: "120px",
+          baggy: false
+        };
+      }
+      if (option === "white3") {
+        data = {
+          type: "bottom",
+          image: "..\\..\\assets\\separated\\bottoms\\bottoms_r4_c6_processed_by_imagy.png",
+          left: "300px",
+          top: "465px",
+          width: "100px",
+          height: "120px",
+          baggy: false
+        };
+      }
+      if (option === "black3") {
+        data = {
+          type: "bottom",
+          image: "..\\..\\assets\\separated\\bottoms\\bottoms_r4_c7_processed_by_imagy.png",
+          left: "300px",
+          top: "465px",
+          width: "100px",
+          height: "120px",
+          baggy: false
+        };
+      }
+  // bottom4----------------------------------------------------------
+       if (option === "blue14") {
+        data = {
+          type: "bottom",
+          image: "..\\..\\assets\\separated\\bottoms\\bottoms_r5_c2_processed_by_imagy.png",
+          left: "300px",
+          top: "470px",
+          width: "100px",
+          height: "40px",
+          baggy: false
+        };
+      }
+if (option === "blue24") {
+        data = {
+          type: "bottom",
+          image: "..\\..\\assets\\separated\\bottoms\\bottoms_r5_c3_processed_by_imagy.png",
+          left: "300px",
+          top: "470px",
+          width: "100px",
+          height: "40px",
+          baggy: false
+        };
+      }
+      if (option === "blue34") {
+        data = {
+          type: "bottom",
+          image: "..\\..\\assets\\separated\\bottoms\\bottoms_r5_c4_processed_by_imagy.png",
+          left: "300px",
+          top: "470px",
+          width: "100px",
+          height: "40px",
+          baggy: false
+        };
+      }
+      if (option === "pink4") {
+        data = {
+          type: "bottom",
+          image: "..\\..\\assets\\separated\\bottoms\\bottoms_r5_c5_processed_by_imagy.png",
+          left: "300px",
+          top: "470px",
+          width: "100px",
+          height: "40px",
+          baggy: false
+        };
+      }
+      if (option === "white4") {
+        data = {
+          type: "bottom",
+          image: "..\\..\\assets\\separated\\bottoms\\bottoms_r5_c6_processed_by_imagy.png",
+          left: "300px",
+          top: "470px",
+          width: "100px",
+          height: "40px",
+          baggy: false
+        };
+      }
+      if (option === "black4") {
+        data = {
+          type: "bottom",
+          image: "..\\..\\assets\\separated\\bottoms\\bottoms_r5_c7_processed_by_imagy.png",
+          left: "300px",
+          top: "470px",
+          width: "100px",
+          height: "40px",
+          baggy: false
+        };
+      }
+      // bottom5------------------------------
+       if (option === "blue15") {
+        data = {
+          type: "bottom",
+          image: "..\\..\\assets\\separated\\bottoms\\bottoms_r6_c2_processed_by_imagy.png",
+          left: "300px",
+          top: "470px",
+          width: "100px",
+          height: "40px",
+          baggy: false
+        };
+      }
+if (option === "blue25") {
+        data = {
+          type: "bottom",
+          image: "..\\..\\assets\\separated\\bottoms\\bottoms_r6_c3_processed_by_imagy.png",
+          left: "300px",
+          top: "470px",
+          width: "100px",
+          height: "40px",
+          baggy: false
+        };
+      }
+      if (option === "blue35") {
+        data = {
+          type: "bottom",
+          image: "..\\..\\assets\\separated\\bottoms\\bottoms_r6_c4_processed_by_imagy.png",
+          left: "300px",
+          top: "470px",
+          width: "100px",
+          height: "40px",
+          baggy: false
+        };
+      }
+      if (option === "pink5") {
+        data = {
+          type: "bottom",
+          image: "..\\..\\assets\\separated\\bottoms\\bottoms_r6_c6_processed_by_imagy.png",
+          left: "300px",
+          top: "470px",
+          width: "100px",
+          height: "40px",
+          baggy: false
+        };
+      }
+      if (option === "white5") {
+        data = {
+          type: "bottom",
+          image: "..\\..\\assets\\separated\\bottoms\\bottoms_r6_c6_processed_by_imagy.png",
+          left: "300px",
+          top: "470px",
+          width: "100px",
+          height: "40px",
+          baggy: false
+        };
+      }
+      if (option === "black5") {
+        data = {
+          type: "bottom",
+          image: "..\\..\\assets\\separated\\bottoms\\bottoms_r6_c7_processed_by_imagy.png",
+          left: "300px",
+          top: "470px",
+          width: "100px",
+          height: "40px",
+          baggy: false
+        };
+      }
+      // bottom6------------------------------
+       if (option === "blue16") {
+        data = {
+          type: "bottom",
+          image: "..\\..\\assets\\separated\\bottoms\\bottoms_r7_c2_processed_by_imagy.png",
+          left: "280px",
+          top: "465px",
+          width: "140px",
+          height: "70px",
+          baggy: false
+        };
+      }
+if (option === "blue26") {
+        data = {
+          type: "bottom",
+          image: "..\\..\\assets\\separated\\bottoms\\bottoms_r7_c3_processed_by_imagy.png",
+          left: "280px",
+          top: "465px",
+          width: "140px",
+          height: "70px",
+          baggy: false
+        };
+      }
+      if (option === "blue36") {
+        data = {
+          type: "bottom",
+          image: "..\\..\\assets\\separated\\bottoms\\bottoms_r7_c4_processed_by_imagy.png",
+          left: "280px",
+          top: "465px",
+          width: "140px",
+          height: "70px",
+          baggy: false
+        };
+      }
+      if (option === "pink6") {
+        data = {
+          type: "bottom",
+          image: "..\\..\\assets\\separated\\bottoms\\bottoms_r7_c5_processed_by_imagy.png",
+          left: "280px",
+          top: "465px",
+          width: "140px",
+          height: "70px",
+          baggy: false
+        };
+      }
+      if (option === "white6") {
+        data = {
+          type: "bottom",
+          image: "..\\..\\assets\\separated\\bottoms\\bottoms_r7_c6_processed_by_imagy.png",
+          left: "280px",
+          top: "465px",
+          width: "140px",
+          height: "70px",
+          baggy: false
+        };
+      }
+      if (option === "black6") {
+        data = {
+          type: "bottom",
+          image: "..\\..\\assets\\separated\\bottoms\\bottoms_r7_c7_processed_by_imagy.png",
+          left: "280px",
+          top: "465px",
+          width: "140px",
+          height: "70px",
+          baggy: false
+        };
+      }
+      window.parent.postMessage(data, "*");
+    }
+
+</script>
+
+  </body>
+</html>

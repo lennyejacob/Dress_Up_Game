@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap"
+			rel="stylesheet">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap"
+			rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="..\..\code\css\style_info.css">
+	</head>
+	<title> Dress Up </title>
+	<body background="..\..\assets\homepage.jpg">
+		<a href="..\..\code\html\index.html">
+			<button type="button" id="back"><img width="30px" height="30px"
+					src="..\..\assets\back-Photoroom.png" /></button>
+		</a>
+		<p id="line1">Dress Up</p>
+		<p id="line2">Game!</p>
+		<img class="dressup" src="..\..\assets\dress-up-gif.gif">
+
+		<button id="playBtn">🔇</button>
+
+		<audio id="music" loop>
+			<source
+				src="..\..\assets\KATSEYE  Gameboy  Instrumental.mp3"
+				type="audio/mpeg">
+		</audio>
+
+		<div id="infopanel">
+			<p style="font-weight:bold;">Bibiliography:</p>
+			<dl>
+				<dt>MDN Web Docs</dt>
+				<a
+					href="https://developer.mozilla.org/en-US/docs/Learn"><dd>https://developer.mozilla.org/en-US/docs/Learn</dd></a>
+				<dt>W3Schools</dt>
+				<a href="https://www.w3schools.com/"><dd>https://www.w3schools.com/</dd></a>
+				<dt">CSS-Tricks</dt>
+				<a href="https://css-tricks.com/"><dd>https://css-tricks.com/</dd></a>
+				<dt>freeCodeCamp</dt>
+				<a
+					href="https://www.freecodecamp.org/"><dd>https://www.freecodecamp.org/</dd></a>
+				<dt>CodePen</dt>
+				<a href="https://codepen.io/"><dd>https://codepen.io/</dd></a>
+				<dt>Stack Overflow</dt>
+				<a href="https://stackoverflow.com/"><dd>https://stackoverflow.com/</dd></a>
+			</dl>
+			<p><b>Source Code:</b> <a href>Download</a></p>
+			<p>A simple dress up game.</p>
+			<p>Designed and coded by:</p>
+			<p style="font-weight:bold; font-size: 25px;">Lenny Elizabeth Jacob</p>
+			<p style="font-weight:bold;">BCA, VI Semester, B section<br>U19KU23S0078</p>
+		</div>
+
+		<script>
+const button = document.getElementById("playBtn");
+const music = document.getElementById("music");
+
+button.addEventListener("click", function(){
+
+    if(music.paused){
+        music.play();
+        button.textContent = "🔊";
+    }else{
+        music.pause();
+        button.textContent = "🔇";
+    }
+
+});
+</script>
+
+	</body>
+</html>

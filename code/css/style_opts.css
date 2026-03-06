@@ -1,0 +1,125 @@
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: "La Belle Aurore";
+  }
+
+  #skins {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    width: 100px; 
+    height: 56px;
+    position: absolute;
+    left: 320px;
+    top: 50px;
+    transition: tranform 1s;
+  }
+
+  #skins:hover {
+    transform: scale(1.1);
+  }
+
+  #eyes {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    width: 100px; 
+    height: 56px;
+    position: absolute;
+    left: 130px;
+    top: 250px;
+    transition: tranform 1s;
+  }
+
+  #eyes:hover {
+    transform: scale(1.1);
+  }
+
+  #eyeliner {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    width: 100px; 
+    height: 56px;
+    position: absolute;
+    left: 520px;
+    top: 250px;
+    transition: tranform 1s;
+  }
+
+  #eyeliner:hover {
+    transform: scale(1.1);
+  }
+
+  #lips {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    width: 100px; 
+    height: 56px;
+    position: absolute;
+    left: 130px;
+    top: 450px;
+    transition: tranform 1s;
+  }
+
+  #lips:hover {
+    transform: scale(1.1);
+  }
+
+  #blush {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    width: 100px; 
+    height: 56px;
+    position: absolute;
+    left: 520px;
+    top: 450px;
+    transition: tranform 1s;
+  }
+
+  #blush:hover {
+    transform: scale(1.1);
+  }
+
+  #clothes {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    width: 100px; 
+    height: 56px;
+    position: absolute;
+    left: 325px;
+    top: 250px;
+    transition: tranform 1s;
+  }
+
+  #clothes:hover {
+    transform: scale(1.1);
+  }
+
+  #hair {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    width: 100px; 
+    height: 56px;
+    position: absolute;
+    left: 325px;
+    top: 450px;
+    transition: tranform 1s;
+  }
+
+  #hair:hover {
+    transform: scale(1.1);
+  }

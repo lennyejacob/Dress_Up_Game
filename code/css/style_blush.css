@@ -1,0 +1,214 @@
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  font-family: "La Belle Aurore";
+}
+
+#back {
+  background-color: transparent;
+  background-image: url("..\..\assets\back-Photoroom.png");
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  z-index: 999;
+  transition: tranform 1s;
+}
+
+#back:hover {
+  transform: scale(1.1);
+}
+
+#e1 {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  left: 200px;
+  top: 100px;
+  transition: tranform 1s;
+}
+
+#e1:hover {
+  transform: scale(1.1);
+}
+
+#e2 {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  left: 200px;
+  top: 150px;
+  transition: tranform 1s;
+}
+
+#e2:hover {
+  transform: scale(1.1);
+}
+
+#e3 {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  left: 200px;
+  top: 200px;
+  transition: tranform 1s;
+}
+
+#e3:hover {
+  transform: scale(1.1);
+}
+
+#e4 {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  left: 200px;
+  top: 250px;
+  transition: tranform 1s;
+}
+
+#e4:hover {
+  transform: scale(1.1);
+}
+
+#e5 {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  left: 200px;
+  top: 300px;
+  transition: tranform 1s;
+}
+
+#e5:hover {
+  transform: scale(1.1);
+}
+
+#e6 {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  left: 200px;
+  top: 350px;
+  transition: tranform 1s;
+}
+
+#e6:hover {
+  transform: scale(1.1);
+}
+
+#e7 {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  left: 200px;
+  top: 400px;
+  transition: tranform 1s;
+}
+
+#e7:hover {
+  transform: scale(1.1);
+}
+
+#e8 {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  left: 200px;
+  top: 450px;
+  transition: tranform 1s;
+}
+
+#e8:hover {
+  transform: scale(1.1);
+}
+
+#e9 {
+  background-color: transparent;
+
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  left: 500px;
+  top: 100px;
+  transition: tranform 1s;
+}
+
+#e9:hover {
+  transform: scale(1.1);
+}
+
+#e10 {
+  background-color: transparent;
+
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  left: 500px;
+  top: 150px;
+  transition: tranform 1s;
+}
+
+#e10:hover {
+  transform: scale(1.1);
+}
+
+#e11 {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  left: 500px;
+  top: 200px;
+  transition: tranform 1s;
+}
+
+#e11:hover {
+  transform: scale(1.1);
+}

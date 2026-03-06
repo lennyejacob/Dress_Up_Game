@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dress up</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap"
+      rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="..\..\code\css\style_hair.css">
+  </head>
+  <body background="..\..\assets\cup-frame.png">
+    <a href="..\..\code\html\index_opts.html">
+      <button type="button" id="back"><img width="30px" height="30px"
+          src="..\..\assets\back-Photoroom.png" /></button>
+    </a>
+
+        <button onclick="changeParentImage1()" type="button" id="x"><img img
+        width="180px" height="180px"
+        src="..\..\assets\x-Photoroom.png" /></button>
+
+    <img id="e1" width="200" height="220"
+      src="..\..\assets\separated\hair 1\hair 1_r1_c3_processed_by_imagy.png" />
+    <select onchange="sendUpdate(this.value)" class="col" id="col1">
+      <option value="brown1">Brown</option>
+      <option value="red1">Red</option>
+      <option value="black1" selected>Black</option>
+      <option value="teal1">Teal</option>
+      <option value="blue1">Blue</option>
+      <option value="brun1">Brunette</option>
+      <option value="pink1">Pink</option>
+      <option value="purple1">Purple</option>
+      <option value="blonde1">Blonde</option>
+    </select>
+
+    <img id="e2" width="200" height="250"
+      src="..\..\assets\separated\hair 2\hair 2_r1_c3_processed_by_imagy.png" />
+    <select onchange="sendUpdate(this.value)" class="col" id="col2">
+      <option value="brown2">Brown</option>
+      <option value="red2">Red</option>
+      <option value="black2" selected>Black</option>
+      <option value="teal2">Teal</option>
+      <option value="blue2">Blue</option>
+      <option value="brun2">Brunette</option>
+      <option value="pink2">Pink</option>
+      <option value="purple2">Purple</option>
+      <option value="blonde2">Blonde</option>
+    </select>
+
+    <img id="e3" width="260" height="240"
+      src="..\..\assets\separated\hair 3\hair 3_r1_c3_processed_by_imagy.png" />
+    <select onchange="sendUpdate(this.value)"  class="col" id="col3">
+      <option value="brown3">Brown</option>
+      <option value="red3">Red</option>
+      <option value="black3" selected>Black</option>
+      <option value="teal3">Teal</option>
+      <option value="blue3">Blue</option>
+      <option value="brun3">Brunette</option>
+      <option value="pink3">Pink</option>
+      <option value="purple3">Purple</option>
+      <option value="blonde3">Blonde</option>
+    </select>
+
+    <img id="e4" width="200" height="300"
+      src="..\..\assets\separated\hair 4\hair 4_r1_c3_processed_by_imagy.png" />
+    <select onchange="sendUpdate(this.value)" class="col" id="col4">
+      <option value="brown4">Brown</option>
+      <option value="red4">Red</option>
+      <option value="black4" selected>Black</option>
+      <option value="teal4">Teal</option>
+      <option value="blue4">Blue</option>
+      <option value="brun4">Brunette</option>
+      <option value="pink4">Pink</option>
+      <option value="purple4">Purple</option>
+      <option value="blonde4">Blonde</option>
+    </select>
+
+    <img id="e5" width="200" height="140"
+      src="..\..\assets\separated\hair 5\hair 5_r1_c3_processed_by_imagy.png" />
+    <select onchange="sendUpdate(this.value)" class="col" id="col5">
+      <option value="brown5">Brown</option>
+      <option value="red5">Red</option>
+      <option value="black5" selected>Black</option>
+      <option value="teal5">Teal</option>
+      <option value="blue5">Blue</option>
+      <option value="brun5">Brunette</option>
+      <option value="pink5">Pink</option>
+      <option value="purple5">Purple</option>
+      <option value="blonde5">Blonde</option>
+    </select>
+
+    <img id="e6" width="200" height="140"
+      src="..\..\assets\separated\hair 6\hair 6_r1_c3_processed_by_imagy.png" />
+    <select onchange="sendUpdate(this.value)" class="col" id="col6">
+      <option value="brown6">Brown</option>
+      <option value="red6">Red</option>
+      <option value="black6" selected>Black</option>
+      <option value="teal6">Teal</option>
+      <option value="blue6">Blue</option>
+      <option value="brun6">Brunette</option>
+      <option value="pink6">Pink</option>
+      <option value="purple6">Purple</option>
+      <option value="blonde6">Blonde</option>
+    </select>
+
+    <script>
+function changeParentImage1() {
+      window.parent.postMessage("removeHair", "*");
+    }
+function sendUpdate(option) {
+      let data = {};
+  // hair1----------------------------------------------------------------
+       if (option === "brown1") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 1\\hair 1_r1_c1_processed_by_imagy.png",
+          left: "227px",
+          top: "200px",
+          width: "220px",
+          height: "240px"
+        };
+      }
+      if (option === "red1") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 1\\hair 1_r1_c2_processed_by_imagy.png",
+          left: "227px",
+          top: "200px",
+          width: "220px",
+          height: "240px"
+        };
+      }
+      if (option === "black1") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 1\\hair 1_r1_c3_processed_by_imagy.png",
+          left: "227px",
+          top: "200px",
+          width: "220px",
+          height: "240px"
+        };
+      }
+      if (option === "teal1") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 1\\hair 1_r2_c1_processed_by_imagy.png",
+          left: "227px",
+          top: "200px",
+          width: "220px",
+          height: "240px"
+        };
+      }
+      if (option === "blue1") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 1\\hair 1_r2_c2_processed_by_imagy.png",
+          left: "227px",
+          top: "200px",
+          width: "220px",
+          height: "240px"
+        };
+      }
+      if (option === "brun1") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 1\\hair 1_r2_c3_processed_by_imagy.png",
+          left: "227px",
+          top: "200px",
+          width: "220px",
+          height: "240px"
+        };
+      }
+        if (option === "pink1") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 1\\hair 1_r3_c1_processed_by_imagy.png",
+          left: "227px",
+          top: "200px",
+          width: "220px",
+          height: "240px"
+        };
+      }
+    if (option === "purple1") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 1\\hair 1_r3_c2_processed_by_imagy.png",
+          left: "227px",
+          top: "200px",
+          width: "220px",
+          height: "240px"
+        };
+      }
+      if (option === "blonde1") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 1\\hair 1_r3_c3_processed_by_imagy.png",
+          left: "227px",
+          top: "200px",
+          width: "220px",
+          height: "240px"
+        };
+      }
+       // hair2----------------------------------------------------------------
+       if (option === "brown2") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 2\\hair 2_r1_c1_processed_by_imagy.png",
+          left: "235px",
+          top: "200px",
+          width: "220px",
+          height: "260px"
+        };
+      }
+      if (option === "red2") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 2\\hair 2_r1_c2_processed_by_imagy.png",
+          left: "235px",
+          top: "200px",
+          width: "220px",
+          height: "260px"
+        };
+      }
+      if (option === "black2") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 2\\hair 2_r1_c3_processed_by_imagy.png",
+          left: "235px",
+          top: "200px",
+          width: "220px",
+          height: "260px"
+        };
+      }
+      if (option === "teal2") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 2\\hair 2_r2_c1_processed_by_imagy.png",
+          left: "235px",
+          top: "200px",
+          width: "220px",
+          height: "260px"
+        };
+      }
+      if (option === "blue2") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 2\\hair 2_r2_c2_processed_by_imagy.png",
+          left: "235px",
+          top: "200px",
+          width: "220px",
+          height: "260px"
+        };
+      }
+      if (option === "brun2") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 2\\hair 2_r2_c3_processed_by_imagy.png",
+          left: "235px",
+          top: "200px",
+          width: "220px",
+          height: "260px"
+        };
+      }
+        if (option === "pink2") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 2\\hair 2_r3_c1_processed_by_imagy.png",
+          left: "235px",
+          top: "200px",
+          width: "220px",
+          height: "260px"
+        };
+      }
+    if (option === "purple2") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 2\\hair 2_r3_c2_processed_by_imagy.png",
+          left: "235px",
+          top: "200px",
+          width: "220px",
+          height: "260px"
+        };
+      }
+      if (option === "blonde2") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 2\\hair 2_r3_c3_processed_by_imagy.png",
+          left: "235px",
+          top: "200px",
+          width: "220px",
+          height: "260px"
+        };
+      }
+        // hair3----------------------------------------------------------------
+       if (option === "brown3") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 3\\hair 3_r1_c1_processed_by_imagy.png",
+          left: "223px",
+          top: "195px",
+          width: "260px",
+          height: "240px"
+        };
+      }
+      if (option === "red3") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 3\\hair 3_r1_c2_processed_by_imagy.png",
+          left: "223px",
+          top: "195px",
+          width: "260px",
+          height: "240px"
+        };
+      }
+      if (option === "black3") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 1\\hair 1_r1_c3_processed_by_imagy.png",
+          left: "223px",
+          top: "195px",
+          width: "260px",
+          height: "240px"
+        };
+      }
+      if (option === "teal3") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 3\\hair 3_r2_c1_processed_by_imagy.png",
+          left: "223px",
+          top: "195px",
+          width: "260px",
+          height: "240px"
+        };
+      }
+      if (option === "blue3") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 3\\hair 3_r2_c2_processed_by_imagy.png",
+          left: "223px",
+          top: "195px",
+          width: "260px",
+          height: "240px"
+        };
+      }
+      if (option === "brun3") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 3\\hair 3_r2_c3_processed_by_imagy.png",
+          left: "223px",
+          top: "195px",
+          width: "260px",
+          height: "240px"
+        };
+      }
+        if (option === "pink3") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 3\\hair 3_r3_c1_processed_by_imagy.png",
+          left: "223px",
+          top: "195px",
+          width: "260px",
+          height: "240px"
+        };
+      }
+    if (option === "purple3") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 3\\hair 3_r3_c2_processed_by_imagy.png",
+          left: "223px",
+          top: "195px",
+          width: "260px",
+          height: "240px"
+        };
+      }
+      if (option === "blonde3") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 3\\hair 3_r3_c3_processed_by_imagy.png",
+          left: "223px",
+          top: "195px",
+          width: "260px",
+          height: "240px"
+        };
+      }
+        // hair4----------------------------------------------------------------
+       if (option === "brown4") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 4\\hair 4_r1_c1_processed_by_imagy.png",
+          left: "245px",
+          top: "190px",
+          width: "210px",
+          height: "260px"
+        };
+      }
+      if (option === "red4") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 4\\hair 4_r1_c2_processed_by_imagy.png",
+          left: "245px",
+          top: "190px",
+          width: "210px",
+          height: "260px"
+        };
+      }
+      if (option === "black4") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 4\\hair 4_r1_c3_processed_by_imagy.png",
+          left: "245px",
+          top: "190px",
+          width: "210px",
+          height: "260px"
+        };
+      }
+      if (option === "teal4") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 4\\hair 4_r2_c1_processed_by_imagy.png",
+          left: "245px",
+          top: "190px",
+          width: "210px",
+          height: "260px"
+        };
+      }
+      if (option === "blue4") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 4\\hair 4_r2_c2_processed_by_imagy.png",
+          left: "245px",
+          top: "190px",
+          width: "210px",
+          height: "260px"
+        };
+      }
+      if (option === "brun4") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 4\\hair 4_r2_c3_processed_by_imagy.png",
+          left: "245px",
+          top: "190px",
+          width: "210px",
+          height: "260px"
+        };
+      }
+        if (option === "pink4") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 4\\hair 4_r3_c1_processed_by_imagy.png",
+          left: "245px",
+          top: "190px",
+          width: "210px",
+          height: "260px"
+        };
+      }
+    if (option === "purple4") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 4\\hair 4_r3_c2_processed_by_imagy.png",
+          left: "245px",
+          top: "190px",
+          width: "210px",
+          height: "260px"
+        };
+      }
+      if (option === "blonde4") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 4\\hair 4_r3_c3_processed_by_imagy.png",
+          left: "245px",
+          top: "190px",
+          width: "210px",
+          height: "260px"
+        };
+      }
+        // hair5----------------------------------------------------------------
+       if (option === "brown5") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 5\\hair 5_r1_c1_processed_by_imagy.png",
+          left: "243px",
+          top: "190px",
+          width: "210px",
+          height: "130px"
+        };
+      }
+      if (option === "red5") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 5\\hair 5_r1_c2_processed_by_imagy.png",
+          left: "243px",
+          top: "190px",
+          width: "210px",
+          height: "130px"
+        };
+      }
+      if (option === "black5") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 5\\hair 5_r1_c3_processed_by_imagy.png",
+          left: "243px",
+          top: "190px",
+          width: "210px",
+          height: "130px"
+        };
+      }
+      if (option === "teal5") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 5\\hair 5_r2_c1_processed_by_imagy.png",
+          left: "243px",
+          top: "190px",
+          width: "210px",
+          height: "130px"
+        };
+      }
+      if (option === "blue5") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 5\\hair 5_r2_c2_processed_by_imagy.png",
+          left: "243px",
+          top: "190px",
+          width: "210px",
+          height: "130px"
+        };
+      }
+      if (option === "brun5") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 5\\hair 5_r2_c3_processed_by_imagy.png",
+          left: "243px",
+          top: "190px",
+          width: "210px",
+          height: "130px"
+        };
+      }
+        if (option === "pink5") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 5\\hair 5_r3_c1_processed_by_imagy.png",
+          left: "243px",
+          top: "190px",
+          width: "210px",
+          height: "130px"
+        };
+      }
+    if (option === "purple5") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 5\\hair 5_r3_c2_processed_by_imagy.png",
+          left: "243px",
+          top: "190px",
+          width: "210px",
+          height: "130px"
+        };
+      }
+      if (option === "blonde5") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 5\\hair 5_r3_c3_processed_by_imagy.png",
+          left: "243px",
+          top: "190px",
+          width: "210px",
+          height: "130px"
+        };
+      }
+        // hair6----------------------------------------------------------------
+       if (option === "brown6") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 6\\hair 6_r1_c1_processed_by_imagy.png",
+          left: "270px",
+          top: "170px",
+          width: "230px",
+          height: "130px"
+        };
+      }
+      if (option === "red6") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 6\\hair 6_r1_c2_processed_by_imagy.png",
+          left: "270px",
+          top: "170px",
+          width: "230px",
+          height: "130px"
+        };
+      }
+      if (option === "black6") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 6\\hair 6_r1_c3_processed_by_imagy.png",
+          left: "270px",
+          top: "170px",
+          width: "230px",
+          height: "130px"
+        };
+      }
+      if (option === "teal6") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 6\\hair 6_r2_c1_processed_by_imagy.png",
+          left: "270px",
+          top: "170px",
+          width: "230px",
+          height: "130px"
+        };
+      }
+      if (option === "blue6") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 6\\hair 6_r2_c2_processed_by_imagy.png",
+          left: "270px",
+          top: "170px",
+          width: "230px",
+          height: "130px"
+        };
+      }
+      if (option === "brun6") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 6\\hair 6_r2_c3_processed_by_imagy.png",
+          left: "270px",
+          top: "170px",
+          width: "230px",
+          height: "130px"
+        };
+      }
+        if (option === "pink6") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 6\\hair 6_r3_c1_processed_by_imagy.png",
+          left: "270px",
+          top: "170px",
+          width: "230px",
+          height: "130px"
+        };
+      }
+    if (option === "purple6") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 6\\hair 6_r3_c2_processed_by_imagy.png",
+          left: "270px",
+          top: "170px",
+          width: "230px",
+          height: "130px"
+        };
+      }
+      if (option === "blonde6") {
+        data = {
+          type: "hair",
+          image: "..\\..\\assets\\separated\\hair 6\\hair 6_r3_c3_processed_by_imagy.png",
+          left: "270px",
+          top: "170px",
+          width: "230px",
+          height: "130px"
+        };
+      }
+
+
+            window.parent.postMessage(data, "*");
+    }
+
+
+</script>
+
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>Dress up</title>
+
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com"
+                        crossorigin>
+                <link
+                        href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap"
+                        rel="stylesheet">
+
+                <link rel="stylesheet" type="text/css"
+                        href="..\..\code\css\style_skins.css">
+        </head>
+        <body
+                background="..\..\assets\cup-frame.png">
+                <a
+                        href="..\..\code\html\index_opts.html">
+                        <button type="button" id="back"><img width="30px"
+                                        height="30px"
+                                        src="..\..\assets\back-Photoroom.png" /></button>
+                </a>
+
+                <button type="button" onclick="changeParentImage1()" id="s1"><img width="120" height="290"
+                                src="..\..\assets\separated\skins\skins_r1_c1_processed_by_imagy.png" /></button>
+                <button type="button" onclick="changeParentImage2()" id="s2"><img width="120" height="290"
+                                src="..\..\assets\separated\skins\skins_r1_c2_processed_by_imagy.png" /></button>
+                <button type="button" onclick="changeParentImage3()" id="s3"><img width="120" height="290"
+                                src="..\..\assets\separated\skins\skins_r1_c3_processed_by_imagy.png" /></button>
+                <button type="button" onclick="changeParentImage4()" id="s4"><img width="120" height="290"
+                                src="..\..\assets\separated\skins\skins_r1_c4_processed_by_imagy.png" /></button>
+                <button type="button" onclick="changeParentImage5()" id="s5"><img width="120" height="290"
+                                src="..\..\assets\separated\skins\skins_r2_c1_processed_by_imagy.png" /></button>
+                <button type="button" onclick="changeParentImage6()" id="s6"><img width="120" height="290"
+                                src="..\..\assets\separated\skins\skins_r2_c2_processed_by_imagy.png" /></button>
+                <button type="button" onclick="changeParentImage7()" id="s7"><img width="120" height="290"
+                                src="..\..\assets\separated\skins\skins_r2_c3_processed_by_imagy.png" /></button>
+                <button type="button" onclick="changeParentImage8()" id="s8"><img width="120" height="290"
+                                src="..\..\assets\separated\skins\skins_r2_c4_processed_by_imagy.png" /></button>
+
+                <script>
+    function changeParentImage1() {
+      window.parent.postMessage("changeImage1", "*");
+    }
+function changeParentImage2() {
+      window.parent.postMessage("changeImage2", "*");
+    }
+function changeParentImage3() {
+      window.parent.postMessage("changeImage3", "*");
+    }
+function changeParentImage4() {
+      window.parent.postMessage("changeImage4", "*");
+    }
+function changeParentImage5() {
+      window.parent.postMessage("changeImage5", "*");
+    }
+function changeParentImage6() {
+      window.parent.postMessage("changeImage6", "*");
+    }
+function changeParentImage7() {
+      window.parent.postMessage("changeImage7", "*");
+    }
+function changeParentImage8() {
+      window.parent.postMessage("changeImage8", "*");
+    }
+
+  </script>
+
+        </body>
+</html>

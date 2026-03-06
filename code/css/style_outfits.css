@@ -1,0 +1,93 @@
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  font-family: "La Belle Aurore";
+}
+
+#back {
+  background-color: transparent;
+  background-image: url("..\..\assets\back-Photoroom.png");
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  z-index: 999;
+  transition: tranform 1s;
+}
+
+#back:hover {
+  transform: scale(1.1);
+}
+
+#dress {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  height: 56px;
+  position: absolute;
+  left: 130px;
+  top: 150px;
+  transition: tranform 1s;
+}
+
+#dress:hover {
+  transform: scale(1.1);
+}
+
+#tops {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  height: 56px;
+  position: absolute;
+  left: 520px;
+  top: 150px;
+  transition: tranform 1s;
+}
+
+#tops:hover {
+  transform: scale(1.1);
+}
+
+#bottoms {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  height: 56px;
+  position: absolute;
+  left: 130px;
+  top: 450px;
+  transition: tranform 1s;
+}
+
+#bottoms:hover {
+  transform: scale(1.1);
+}
+
+#shoes {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  height: 56px;
+  position: absolute;
+  left: 520px;
+  top: 450px;
+  transition: tranform 1s;
+}
+
+#shoes:hover {
+  transform: scale(1.1);
+}

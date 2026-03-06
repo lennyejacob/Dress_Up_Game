@@ -1,0 +1,94 @@
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  font-family: "La Belle Aurore";
+}
+
+.dressup {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+#start {
+  background-color: transparent;
+  background-image: url("\dress\assets\Start cropped-Photoroom.png");
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  width: 100px; 
+  height: 56px;
+  position: absolute;
+  left: 1050px;
+  top: 470px;
+  transition: tranform 1s;
+}
+
+#start:hover {
+  transform: scale(1.1);
+}
+
+#iButton {
+  background-color: transparent;
+  background-image: url("..\..\assets\info-Photoroom.png");
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  transition: tranform 1s;
+}
+
+#iButton:hover {
+  transform: scale(1.1);
+}
+
+#playBtn{
+    background-color: #ff66c4;
+    border: none;
+    font-size:22px;
+    padding:1px 1px;
+    border-radius: 50%;
+    cursor:pointer;
+    position: absolute;
+    left: 55px;
+    top: 10px;
+}
+
+#playBtn:hover {
+  transform: scale(1.1);
+}
+
+#author {
+  font-family: "La Belle Aurore";
+  font-size: 20px;
+  color: white;
+  margin-top: 10px;
+  margin-left: 1290px;
+}
+
+#line1 {
+  font-family: "Rampart One";
+  font-size: 100px;
+  font-weight: bolder;
+  color: rgb(250, 128, 189);
+  text-shadow: 3px 3px black;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+#line2 {
+  font-family: "Rampart One";
+  font-size: 100px;
+  font-weight: bolder;
+  color: rgb(250, 128, 189);
+  text-shadow: 3px 3px black;
+  position: absolute;
+  top: 200px;
+  left: 150px;
+}
